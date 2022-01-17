@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Black.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-BlackItalic.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-Bold.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-Regular.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-Thin.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-ThinItalic.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-Medium.ttf') format('ttf') ;
+    
+
+}
+
+
+
+
+#main_wrapper{
+
+    width:95%;
+    margin: auto;
+}
+
+h1,h2,p,ul,li,button{
+    font-family: 'Raleway',Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+}
+
