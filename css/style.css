@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('assets/fonts/Raleway-Black.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-BlackItalic.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-Bold.ttf') format('ttf');
+    src: url('assets/fonts/Raleway-Regular.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-Thin.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-ThinItalic.ttf') format('ttf') ;
+    src: url('assets/fonts/Raleway-Medium.ttf') format('ttf') ;
+    
+
+}
+
+
+
+
+#main_wrapper{
+
+    width:95%;
+    margin: auto;
+}
+
+h1,h2,p,ul,li,button,a{
+    font-family: 'Raleway',Arial, Helvetica, sans-serif ;
+    box-sizing: border-box;
+}
+
+
+
+/************* body ************/
+main{
+
+    display: flex;
+
+}
+
+
+#premiere_section{
+
+    width: 60%;
+    height: 700px;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+}
+
+#sous_section{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4% 1.5% 0 1%;
+}
+
+
+.hebergement{
+display: flex;
+flex-direction: column;
+  /* justify-content: flex-end; */
+
+height:200px;
+width: 26%;
+background-color: white;
+border-radius: 30px;
+box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+margin: 0.2% 0% 2% 1%;
+
+}
+
+#premiere_section h1{
+padding: 10px 0 10px 30px;
+position: relative;
+left: 20px;  
+}
+
+
+.card{
+
+margin-bottom: 20px;
+   
+}
+
+/* utiliser la position relative pour se positionner à l'interieur de notre conteneur et overflow pour empecher les débordements*/
+
+.card-img{
+
+height: 200px;
+position: relative;
+overflow: hidden;
+
+
+}
+
+.card img{
+
+padding: 1.5% 0.2% 1.5% 1.5% ;
+width:98% ;
+position: absolute;
+top: 2%;
+    
+height: 150px;
+border-radius: 25px 25px 0 0;
+box-sizing: border-box;
+overflow: hidden;
+object-fit: cover;
+
+    
+}
+
+.card-body{
+    
+box-sizing: border-box;
+/* margin-left: 10px ; */
+    
+}
+
+.card-body h3,p{
+
+margin: auto 6%;
+    
+}
+
+.etoile{
+
+color: #0065FC;
+}
+
+.etoile-grise{
+
+color: #F2F2F2;
+    
+border-style: none;
+    
+}
+
+.afficher{
+
+    font-weight: bold;
+    margin: 0.2% 6%;
+    
+}
+
+/************aside***************/
+
+aside{ 
+    position: relative;
+    width: 30%;
+    height: 700px;
+    background-color: #F2F2F2;
+    border-radius: 40px;
+    margin-left: 50px;
+
+}
+
+aside h2{
+
+    margin-top: 7%;
+    margin-left: 10%;
+
+}
+
+.icone-courbe {
+position: absolute;
+left: 85% ;
+  top: 5%;
+}
+
+.plus_populaire{
+
+    width: 80%;
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 10px ;
+}
