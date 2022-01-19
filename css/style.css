@@ -234,3 +234,37 @@ left: 85% ;
 
     font-size: 14px;
 }
+
+/************ section activité à marseille*************/
+
+
+#section_activites{
+
+    
+
+}
+
+#sous-section_activites{
+
+    display: flex;
+}
+
+figure{
+
+    
+}
+
+figcaption{
+ 
+    
+
+}
+
+.activite-marseille{
+
+width: 20%;
+height:400px ;
+border: 1px solid black;
+border-radius: 20px;
+
+}
