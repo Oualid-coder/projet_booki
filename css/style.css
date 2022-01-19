@@ -1,17 +1,4 @@
-@font-face {
-    font-family: 'Raleway';
-    src: url('assets/fonts/Raleway-Black.ttf') format('ttf');
-    src: url('assets/fonts/Raleway-BlackItalic.ttf') format('ttf');
-    src: url('assets/fonts/Raleway-Bold.ttf') format('ttf');
-    src: url('assets/fonts/Raleway-Regular.ttf') format('ttf') ;
-    src: url('assets/fonts/Raleway-Thin.ttf') format('ttf') ;
-    src: url('assets/fonts/Raleway-ThinItalic.ttf') format('ttf') ;
-    src: url('assets/fonts/Raleway-Medium.ttf') format('ttf') ;
-    
-
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@311;700&display=swap');
 
 
 #main_wrapper{
@@ -20,10 +7,11 @@
     margin: auto;
 }
 
-h1,h2,p,ul,li,button,a{
+h1,h2,h3,p,ul,li,button{
     font-family: 'Raleway',Arial, Helvetica, sans-serif ;
-    box-sizing: border-box;
+     /* box-sizing: border-box; */
 }
+
 
 
 
@@ -37,68 +25,68 @@ main{
 
 #premiere_section{
 
-    width: 60%;
-    height: 700px;
+    width: 80%;
+    height: 690px;
     background-color: #F2F2F2;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 
+#premiere_section h2{
+
+    margin:3% 3% 0 3%;    
+    padding: 5px 5px;
+    left: 20px;  
+    font-weight:bolder ;
+
+    }
+
+/*****************card hébergements à marseille*******************/
 #sous_section{
 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 4% 1.5% 0 1%;
+    margin: 0 3% 0 2%;
 }
 
 
-.hebergement{
-display: flex;
-flex-direction: column;
-  /* justify-content: flex-end; */
-
-height:200px;
-width: 26%;
-background-color: white;
-border-radius: 30px;
-box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
-margin: 0.2% 0% 2% 1%;
-
-}
-
-#premiere_section h1{
-padding: 10px 0 10px 30px;
-position: relative;
-left: 20px;  
-}
-
-
-.card{
-
-margin-bottom: 20px;
-   
-}
 
 /* utiliser la position relative pour se positionner à l'interieur de notre conteneur et overflow pour empecher les débordements*/
 
+
+.hebergement{
+
+    display: flex;
+    flex-direction: column;
+    height:240px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 1.5% 0% 2% 1%;
+    
+    }
+
+
 .card-img{
 
-height: 200px;
+height: 210px;
 position: relative;
 overflow: hidden;
-
-
+box-sizing: border-box;
+    
 }
 
-.card img{
+.card-img img{
+margin: 0.5% 0.4% 0.5% 1%;
 
-padding: 1.5% 0.2% 1.5% 1.5% ;
+/* padding: 1.5% 0.2% 1.5% 1.5% ; */
+padding: 0.5%;
 width:98% ;
 position: absolute;
-top: 2%;
-    
-height: 150px;
-border-radius: 25px 25px 0 0;
+top: 1%;
+height: 150px;   /**positionnement de l'image**/
+border-radius: 20px 20px 0 0;
 box-sizing: border-box;
 overflow: hidden;
 object-fit: cover;
@@ -109,13 +97,13 @@ object-fit: cover;
 .card-body{
     
 box-sizing: border-box;
-/* margin-left: 10px ; */
+
     
 }
 
 .card-body h3,p{
 
-margin: auto 6%;
+margin: 3% 7%;
     
 }
 
@@ -132,10 +120,11 @@ border-style: none;
     
 }
 
-.afficher{
+#afficher {
 
     font-weight: bold;
-    margin: 0.2% 6%;
+    margin: 2% 6%;
+    font-size: 20px;
     
 }
 
@@ -144,17 +133,22 @@ border-style: none;
 aside{ 
     position: relative;
     width: 30%;
-    height: 700px;
+    height: 690px;
     background-color: #F2F2F2;
-    border-radius: 40px;
+    border-radius: 20px;
     margin-left: 50px;
+
 
 }
 
 aside h2{
 
-    margin-top: 7%;
-    margin-left: 10%;
+
+padding: 10px 0 0 10px;
+position: relative;
+left: 20px;  
+font-weight:bolder ;
+margin:5% 5% 0 5% ;
 
 }
 
@@ -163,11 +157,80 @@ position: absolute;
 left: 85% ;
   top: 5%;
 }
+/**********card plus populaires**********/
+#populaire{
+
+    margin:0 0 0.5% 0.5%;
+    box-sizing: border-box;
+    
+}
 
 .plus_populaire{
+    display: flex;
+    width: 89%;
+    height: 170px;
+    border-radius: 20px ;
+    margin:5% 5% 5% 5%;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    
+    
+}
 
-    width: 80%;
-    height: 100px;
-    border: 1px solid black;
-    border-radius: 10px ;
+
+
+.card-populaire-description{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5%;
+    width: 50%;
+}
+
+.card-populaire-description h3{
+    margin: 1%;
+    
+    }
+
+
+.card-populaire-description p{
+
+    margin: 5% 5% 5% 1%;
+}
+
+
+
+.card-populaire-img{
+    box-sizing: border-box;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    width: 40%;
+    
+    
+
+}
+
+
+.card-populaire-img img{
+    
+    width:100% ;
+    height: 161px;
+    border-radius:20px 0% 0% 20px ;
+    margin: 2%;
+    overflow: hidden;
+    object-fit: cover;
+    
+    
+}
+
+/***ciblge des étoiles du bloc "les plus populaires " pour ajouter une margin-top ***/
+
+.card-populaire-description :nth-child(3) {
+
+    margin-top: 13%;
+}
+
+/** taille des étoiles **/
+.fas{
+
+    font-size: 14px;
 }
