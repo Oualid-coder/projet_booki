@@ -27,7 +27,7 @@ main{
 
     width: 80%;
     height: 690px;
-    background-color: #F2F2F2;
+    background-color: #F2F2F2;           
     border-radius: 20px;
 }
 
@@ -155,7 +155,7 @@ margin:5% 5% 0 5% ;
 .icone-courbe {
 position: absolute;
 left: 85% ;
-  top: 5%;
+top: 5%;
 }
 /**********card plus populaires**********/
 #populaire{
@@ -189,12 +189,14 @@ left: 85% ;
 .card-populaire-description h3{
     margin: 1%;
     
+   
     }
 
 
 .card-populaire-description p{
 
     margin: 5% 5% 5% 1%;
+    
 }
 
 
@@ -244,15 +246,6 @@ left: 85% ;
 
 }
 
-.activite-marseille{
-
-    width: 30%;
-    height:500px ;
-    
-    border-radius: 20px;
-    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
-    
-    }
 
 #section_activites h3{
     
@@ -263,9 +256,33 @@ left: 85% ;
 .sous-section_activites{
 
     display: flex;
+    
 }
 
-.sous-section_activites img{
+
+
+.activite-marseille{
+
+    width: 30%;
+    height:550px ;
+    
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    
+    }
+
+
+
+
+
+figure{
+    position: relative;
+    margin-top: 0; /** enlever la marge par défaut des blocs figure ***/
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+figure img{
 
     width: 100%;
     height: 90%;
@@ -273,22 +290,124 @@ left: 85% ;
     object-fit: cover;
 }
 
-figure{
-    
-margin-top: 0;
-    
-}
 
 figure:first-child{
 
-    margin-left: 0;
+    margin-left: 0;  /** enlever la marge gauche du premier bloc figure ***/
 }
+
 
 figcaption{
  font-size: 120%;
     font-weight: bolder;
     margin: 2% 6%;
     padding: 1% 1%;
+    box-sizing: border-box;
 
+}
+
+/*****************************************/
+
+
+.activite-marseille-inside{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:600px ;
+        
+        
+        
+}
+
+   
+ /* .activite-marseille-inside figure{
+   
+   margin: 0; 
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+   box-sizing: border-box;
+}   */
+
+/* .activite-marseille-inside figure:first-child{
+
+    
+    
+} */
+
+/********************1er et 2e*****************************/
+
+.first-div {
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0 0 50px 0;
+    height: 300px;
+    
+}
+
+.second-div {
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0;
+    height: 200px;
+    
+    
+
+   
+}
+
+.first-div img{
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
+
+.second-div img{
+
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+}
+/************** 3e et 4e ********************/
+.third-div{
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0 0 50px 0;
+    height: 200px;
+
+}
+
+.fourth-div{
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0;
+    height: 300px;
+
+}
+
+.third-div img{
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.fourth-div img{
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+/* .activite-marseille-inside img{
+
+    
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+    
+} */
+
+.activite-marseille-inside figcaption{
+
+    
 }
 
