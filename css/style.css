@@ -157,7 +157,7 @@ position: absolute;
 left: 85% ;
 top: 5%;
 }
-/**********card plus populaires**********/
+/**********************************card plus populaires***********************************/
 #populaire{
 
     margin:0 0 0.5% 0.5%;
@@ -166,6 +166,7 @@ top: 5%;
 }
 
 .plus_populaire{
+    box-sizing: border-box;
     display: flex;
     width: 89%;
     height: 170px;
@@ -188,7 +189,7 @@ top: 5%;
 
 .card-populaire-description h3{
     margin: 1%;
-    
+   
    
     }
 
@@ -411,3 +412,65 @@ figcaption{
     
 }
 
+@media (max-width:1346px){
+
+    /* #main_wrapper{
+
+        width: 70%;
+
+    } */
+
+    .card-populaire-description h3{
+
+        font-size: 100%;
+    }
+
+    .card-populaire-description p{
+        margin:2%;
+        font-size: 100%;
+    }
+ 
+
+
+}
+
+
+
+@media (max-width:992px){
+
+/*************body******************/
+    main{
+
+flex-direction: column;
+    }
+
+    aside{
+
+        margin: 30px 0 auto 0;
+        width: 80%;
+        height: 750px;
+    }
+
+    .card-populaire-description :nth-child(3){
+
+        margin-top:5%;
+        
+    }
+
+    .card-populaire-img img{
+
+        margin: 0.5%;
+    }
+
+    .card-body h3,p{
+    margin: 2% 7%;
+        font-size: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+
+    /*******************body*********************/
+
+}
