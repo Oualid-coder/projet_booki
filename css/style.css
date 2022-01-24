@@ -477,8 +477,10 @@ main{
     flex-direction: column-reverse;
 }
 
-#premiere_section h2{
 
+
+#premiere_section h2{
+    margin-left: 0;
     margin-bottom:20px ;
 }
 
@@ -488,7 +490,8 @@ main{
 }
 
 aside{
-
+    border-radius: 0;
+    margin-bottom: 20px;
     width: 100%;
     height: auto;
 }
@@ -502,6 +505,7 @@ aside h2{
 
 #premiere_section{
 width: 100%;
+
 height: auto;
     background-color: white;
     margin-bottom: 20px;
@@ -515,8 +519,9 @@ height: auto;
 }
 
 #section_activites{
+
     width: auto;
-    margin-top: 50px;
+    margin-top: 30px;
     height: auto;
 }
 
@@ -550,6 +555,7 @@ figure img{
 .hebergement{
 
     width: 100%;
+    margin-bottom: 20px;
 }
 
 .activite-marseille{
@@ -594,6 +600,12 @@ figcaption{
 margin-top: 40px;
 margin-left: 0;
     font-size: 100%;
+}
+
+.card-populaire-img img{
+margin-top: 2.5%;
+margin-left: 3%;
+    height: 95%;
 }
 
 }
