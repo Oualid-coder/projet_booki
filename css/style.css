@@ -12,11 +12,6 @@ h1,h2,h3,p,ul,li,button{
      /* box-sizing: border-box; */
 }
 
-main{
-
-    display: flex;
-
-}
 
 /**************** footer **********************/
 footer{
@@ -51,4 +46,28 @@ li:first-child{
     padding: 2%;
     font-size: 125%;
     font-weight: bold;
+}
+
+@media (max-width:768px){
+
+footer{
+
+    display: block;
+}
+
+ul{
+    width: auto;
+}
+
+li{
+    
+    width: 350px;
+    
+}
+
+footer li {
+    margin-top: 10px;
+
+}
+
 }
