@@ -27,7 +27,7 @@ main{
 #premiere_section{
 
     width: 80%;
-    height: 690px;
+    height: 700px;
     background-color: #F2F2F2;           
     border-radius: 20px;
 }
@@ -124,7 +124,7 @@ border-style: none;
 #afficher {
 
     font-weight: bold;
-    margin: 2% 6%;
+    margin: 1% 6%;
     font-size: 20px;
     
 }
@@ -134,7 +134,7 @@ border-style: none;
 aside{ 
     position: relative;
     width: 30%;
-    height: 690px;
+    height: 700px;
     background-color: #F2F2F2;
     border-radius: 20px;
     margin-left: 50px;
@@ -230,7 +230,7 @@ top: 5%;
 
 .card-populaire-description :nth-child(3) {
 
-    margin-top: 13%;
+    margin-top: 10%;
 }
 
 /** taille des étoiles **/
