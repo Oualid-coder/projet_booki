@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@311;500;700&display=swap');
 
 
-
-
-
 #main_wrapper{
 
     width:95%;
@@ -643,8 +640,43 @@ figcaption{
 } */
 
 .activite-marseille-inside figcaption{
+}
 
+
+
+/**************** footer **********************/
+footer{
+
+    display: flex;
+    width: auto;
+    background-color: #F2F2F2;
     
+    
+}
+
+footer ul{
+    
+    list-style-type: none;
+    margin:1% 1% 2% 1%;
+    padding :1%;
+    width:30%;
+    box-sizing:border-box ;
+}
+footer li{
+    
+    
+    margin:2% 5%;
+    padding: 2%;
+    font-weight: 500;
+    
+}
+
+footer li:first-child{
+    margin:5% 5%  ;
+    padding: 2%;
+    font-size: 125%;
+    font-weight: bold;
+
 }
 
 
@@ -718,14 +750,19 @@ figcaption{
         width: 100%;
     }
 
+
 }
 
 @media (max-width:768px){
 
+
 header{
 
     display: block;
+
 }
+
+
 
 #logo{
 
@@ -1004,4 +1041,25 @@ height: 95%;
 }
 
 
+/************************footer**************/
+
+footer{
+
+
+    display: block;
 }
+
+
+footer ul{
+    width: auto;
+}
+
+
+footer li {
+    margin-top: 10px;
+    width: 350px;
+
+}
+
+}
+
