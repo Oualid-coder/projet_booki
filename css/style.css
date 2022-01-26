@@ -4,7 +4,7 @@
 #main_wrapper{
 
     width:95%;
-    min-width: 412px;
+    /* min-width: 412px; */
     margin: auto;
 }
 
@@ -400,23 +400,3 @@ form{
 
 }
 
-@media (max-width:401px){
-
-    #nav_bar li{
-width: 80%;
-
-    }
-
-
-    #boutonResponsive{
-        margin:0 1% 1% 1%;
-        right: 9%;
-
-    }
-
-    input{
-        width: 90%
-
-    }
-
-}
