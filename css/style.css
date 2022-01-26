@@ -3,6 +3,7 @@
 
 
 
+
 #main_wrapper{
 
     width:95%;
@@ -61,8 +62,16 @@ a{
 
 #nav_bar a:hover{
     color:#0065FC ;
+    
+}
+
+/************* body ************/
+main{
+
+    display: flex;
 
 }
+
 
 
 
@@ -119,9 +128,32 @@ padding-bottom: 12px;
 border:0.3px solid #F2F2F2 ;
 }
 
+#premiere_section{
 
+    width: 80%;
+    height: 700px;
+    background-color: #F2F2F2;           
+    border-radius: 20px;
+}
 
+#premiere_section h2{
 
+    margin:3% 3% 0 3%;    
+    padding: 5px 5px;
+    left: 20px;  
+    font-weight:bolder ;
+
+    }
+
+/*****************card hébergements à marseille*******************/
+#sous_section{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 3% 0 2%;
+
+}
 
 
 #petit-texte {
@@ -166,7 +198,7 @@ text-align: center;
 
 #filtres p{
 height: 20px;
-margin-right: 10px;
+margin: 20px 10px 10px 0;
     font-weight:bold;
 }
 
@@ -213,7 +245,214 @@ margin-right: 10px;
 
     width: 210px;
 }
+/* utiliser la position relative pour se positionner à l'interieur de notre conteneur et overflow pour empecher les débordements*/
 
+
+.hebergement{
+
+    display: flex;
+    flex-direction: column;
+    height:240px;
+    width: 30%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 1.5% 0% 2% 1%;
+    
+    }
+
+
+.card-img{
+
+height: 210px;
+position: relative;
+overflow: hidden;
+box-sizing: border-box;
+    
+}
+
+.card-img img{
+margin: 0.5% 0.4% 0.5% 1%;
+
+/* padding: 1.5% 0.2% 1.5% 1.5% ; */
+padding: 0.5%;
+width:98% ;
+position: absolute;
+top: 1%;
+height: 150px;   /**positionnement de l'image**/
+border-radius: 20px 20px 0 0;
+box-sizing: border-box;
+overflow: hidden;
+object-fit: cover;
+
+    
+}
+
+.card-body{
+    
+box-sizing: border-box;
+
+    
+}
+
+.card-body h3,p{
+
+margin: 3% 7%;
+    
+}
+
+.etoile{
+
+color: #0065FC;
+}
+
+.etoile-grise{
+
+color: #F2F2F2;
+    
+border-style: none;
+    
+}
+
+#afficher {
+
+    font-weight: bold;
+    margin: 1% 6%;
+    font-size: 20px;
+    
+}
+
+/************aside***************/
+
+aside{ 
+    position: relative;
+    width: 30%;
+    height: 700px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-left: 50px;
+
+
+}
+
+aside h2{
+
+
+padding: 10px 0 0 10px;
+position: relative;
+left: 20px;  
+font-weight:bolder ;
+margin:5% 5% 0 5% ;
+
+}
+
+.icone-courbe {
+position: absolute;
+left: 85% ;
+top: 5%;
+}
+
+/**********************************card plus populaires***********************************/
+#populaire{
+
+    margin:0 0 0.5% 0.5%;
+    box-sizing: border-box;
+    
+}
+
+.plus_populaire{
+    box-sizing: border-box;
+    display: flex;
+    width: 89%;
+    height: 170px;
+    border-radius: 20px ;
+    margin:5% 5% 5% 5%;
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    
+    
+}
+
+
+
+.card-populaire-description{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 5%;
+    width: 50%;
+}
+
+.card-populaire-description h3{
+    margin: 1%;
+   
+   
+    }
+
+
+.card-populaire-description p{
+
+    margin: 5% 5% 5% 1%;
+    
+}
+
+
+
+.card-populaire-img{
+    box-sizing: border-box;
+    margin-top: 0.5%;
+    margin-left: 0.5%;
+    width: 40%;
+    
+    
+
+}
+
+
+.card-populaire-img img{
+    
+    width:100% ;
+    height: 161px;
+    border-radius:20px 0% 0% 20px ;
+    margin: 2%;
+    overflow: hidden;
+    object-fit: cover;
+    
+    
+}
+
+/***ciblge des étoiles du bloc "les plus populaires " pour ajouter une margin-top ***/
+
+.card-populaire-description :nth-child(3) {
+
+    margin-top: 10%;
+}
+
+/** taille des étoiles **/
+.fas{
+
+    font-size: 14px;
+}
+
+/*********************************** section activité à marseille******************************/
+
+
+#section_activites{
+
+    margin-top: 30px;
+}
+
+
+#section_activites h3{
+    
+    margin-top: 4%;
+}
+
+
+.sous-section_activites{
+
+    display: flex;
+    
+}
 
 
 .icone{
@@ -258,19 +497,226 @@ margin-right: 10px;
 }
 
 
+.activite-marseille{
+
+    width: 30%;
+    height:550px ;
+    
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    
+    }
+
+
+
+
+
+figure{
+    position: relative;
+    margin-top: 0; /** enlever la marge par défaut des blocs figure ***/
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+figure img{
+
+    width: 100%;
+    height: 90%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+
+figure:first-child{
+
+    margin-left: 0;  /** enlever la marge gauche du premier bloc figure ***/
+}
+
+
+figcaption{
+ font-size: 120%;
+    font-weight: bolder;
+    margin: 2% 6%;
+    padding: 1% 1%;
+    box-sizing: border-box;
+
+}
+
+/*****************************************/
+
+
+.activite-marseille-inside{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: 30%;
+        height:600px ;
+        
+        
+        
+}
+
+   
+ /* .activite-marseille-inside figure{
+   
+   margin: 0; 
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+   box-sizing: border-box;
+}   */
+
+/* .activite-marseille-inside figure:first-child{
+
+    
+    
+} */
+
+/********************1er et 2e*****************************/
+
+.first-div {
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0 0 50px 0;
+    height: 300px;
+    
+}
+
+.second-div {
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0;
+    height: 200px;
+    
+    
+
+   
+}
+
+.first-div img{
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+
+
+.second-div img{
+
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+}
+/************** 3e et 4e ********************/
+.third-div{
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0 0 50px 0;
+    height: 200px;
+
+}
+
+.fourth-div{
+    box-shadow: 3px 3px 3px 3px rgba(212, 206, 206,0.3);
+    margin: 0;
+    height: 300px;
+
+}
+
+.third-div img{
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+.fourth-div img{
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+
+}
+
+/* .activite-marseille-inside img{
+
+    
+    height:78% ;
+    object-fit: cover;
+    width: 100%;
+    
+} */
+
+.activite-marseille-inside figcaption{
+
+    
+}
+
+
+
+@media (max-width:1346px){
+
+
+    .card-populaire-description h3{
+
+        font-size: 100%;
+    }
+
+    .card-populaire-description p{
+        margin:2%;
+        font-size: 100%;
+    }
+ 
+
+
+}
+
 
 @media (max-width:992px){
 
-    /***************************** HEADER ********************************/
+
+/***************************** HEADER ********************************/
 
     .ul-filtres{
 
         flex-wrap: wrap;
     }
+
  .ul-filtres li{
 
     margin: 2%;
  }
+
+ #filtres p{
+     width: auto;
+ }
+
+
+/***********************************BODY********************************/
+    main{
+
+   flex-direction: column;
+
+    }
+
+    aside{
+
+        margin: 30px 0 auto 0;
+        width: 80%;
+        height: 750px;
+    }
+
+    .card-populaire-description :nth-child(3){
+
+        margin-top:5%;
+        
+    }
+
+    .card-populaire-img img{
+
+        margin: 0.5%;
+    }
+
+    .card-body h3,p{
+        margin: 2% 7%;
+        font-size: 100%;
+        width: 100%;
+    }
 
 }
 
@@ -313,7 +759,7 @@ margin:0;
 
 .premier-h2 {
 
-    margin: 30px 50px 20px 2% ;
+    margin: 30px 40px 20px 2% ;
    
 }
 
@@ -348,31 +794,39 @@ margin:0;
 
 #info{
 
-    margin:6px 30px 30px 10px
+    margin:6px 20px 30px 10px
 }
 
 #marker{
+
     position: relative;
-            width: 6%;
-        }
-        #marker i{
+     width: 6%;
+
+ }
+
+ #marker i{
     
-            position: absolute;
-            top: 30%;
-            left:40%;
-            font-size:130%
-        }
+    position: absolute;
+    top: 30%;
+    left:40%;
+    font-size:130%
+
+    }
 
 #bouton{
+
 display: none;
+
 }
 
 #boutonResponsive{
+
 position: absolute;
-  /* position: relative; */
+/* position: relative; */
 right: 1px;
 padding: 0;
 display: inline-block;
+
 }
 
 #formulaire{
@@ -381,6 +835,7 @@ display: inline-block;
 }
 
 input{
+
     width: 100%;
     min-width: 200px;
     height: 55px;
@@ -390,13 +845,163 @@ input{
 }
 
 form{
+
     margin-right: 1%;
     position: relative;
     width: 100%;
 }
 
 
+
+/******************************BODY*************************************************/
+main{
+
+    flex-direction: column-reverse;
 }
 
-/***********************************************************************************/
 
+
+#premiere_section h2{
+
+    margin-left: 0;
+    margin-bottom:20px ;
+
+}
+
+#premiere_section h2{
+
+    font-size: 130%;
+}
+
+aside{
+
+    border-radius: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
+
+}
+
+aside h2{
+
+    font-size: 130%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#premiere_section{
+
+width: 100%;
+height: auto;
+background-color: white;
+margin-bottom: 20px;
+
+}
+
+#sous_section{
+
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+}
+
+#section_activites{
+
+    width: auto;
+    margin-top: 30px;
+    height: auto;
+}
+
+#section_activites h3{
+
+    font-size: 130%;
+}
+
+.sous-section_activites{
+    width: auto;
+    display: block;
+    width: auto;
+}
+
+.sous-section_activites figure{
+
+height: 240px;
+
+}
+
+.activite-marseille img{
+
+
+}
+
+figure img{
+
+    height: 70%;
+}
+
+
+.hebergement{
+
+    width: 98%;
+    margin-bottom: 20px;
+    box-shadow: 7px 7px 7px 7px rgba(212, 206, 206,0.3);
+}
+
+.activite-marseille{
+    width: 98%;
+    height: auto;
+    margin: 0 0 30px 0;
+}
+
+.figure{
+
+    height: 240px;
+    width: 100%;
+    margin: 0;
+}
+
+.activite-marseille-inside{
+
+    width: auto;
+    height: auto;
+    margin: 0 0 8px 0;
+    
+}
+
+.activite-marseille-inside figure{
+    
+ width: 98%;
+ height: 240px;
+ margin: 0 0 30px 0;
+
+}
+
+.activite-marseille-inside img{
+
+    height: 70%;
+}
+
+figcaption{
+
+    margin-top: 20px;
+}
+
+#afficher{
+
+margin-top: 40px;
+margin-left: 0;
+font-size: 100%;
+
+}
+
+.card-populaire-img img{
+
+margin-top: 2.5%;
+margin-left: 3%;
+height: 95%;
+
+}
+
+
+}
